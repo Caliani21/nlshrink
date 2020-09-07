@@ -33,7 +33,6 @@
 #'
 #' @export
 tau_estimate <- function(X, k = 0, method = "nlminb", control = list()) {
-  cat("Estimating population eigenvalues...")
   rho <- new.env()
   # initial set up
   rho$n <- nrow(X)
